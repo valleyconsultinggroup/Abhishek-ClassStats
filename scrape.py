@@ -2,7 +2,7 @@ import json
 import requests
 from scipy.stats import norm
 import pickle
-import course
+from course import Course
 
 #Creating dictionary to store filter IDs
 filters = {
