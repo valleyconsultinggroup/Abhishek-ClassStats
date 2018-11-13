@@ -37,21 +37,21 @@ def get_courses_per_filter(filter_num):
 	
 
 #Creating a set of all courses
-all_courses = set()
-for f in filters:
-    print("Collecting " + f + "...")
-    f = filters[f]
-    all_courses = all_courses.union(get_courses_per_filter(f))
+# all_courses = set()
+# for f in filters:
+#     print("Collecting " + f + "...")
+#     f = filters[f]
+#     all_courses = all_courses.union(get_courses_per_filter(f))
 
 
 #Saving the course information locally
-with open('courses', 'wb') as f:
-    pickle.dump(all_courses, f)
+# with open('courses', 'wb') as f:
+#     pickle.dump(all_courses, f)
 
 
 #Loading the course information locally
-# with open('courses', 'rb') as f:
-#     all_courses = pickle.load(f)
+with open('courses', 'rb') as f:
+    all_courses = pickle.load(f)
 
 
 #Fetches the standard deviation information for a course 
