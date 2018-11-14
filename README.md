@@ -39,10 +39,9 @@ Currently, Berkeley students have don't have a good idea of what their grade in 
 * Define function to calculate grade distributions for a course: I used the Scipy libraries here and created a function that took in a course object and outputted what exactly you would need in terms of SD's to get specific grades according to the history of the class data.
 * Create basic input method for user experience: The way the program works for a user now is they just have to input a class name ex: COMPSCI 61A and then they can get back the distribution information for that class based on the past class data 
 
-### Supplementary Material
-**TODO**: Include any links to materials that might help people learn more about your project.
+### Further Project Developments
 
-* 
+* I will be including a more advanced user interface feature where users can input their midterm grades and get back what they need on other exams to get a certain grade in the class.
 
-### Additional Links
-* N/A
+* I will develop feautures making enrollment easier such as finding classes that are near you that fulfill certain requirements ex: Finding a class close to Unit 3 that satisfies the historical sciences breadth. This can be done by a little additional scraping of the class addresses and the use of the geopy API to locate classes and calculate distances between them and you.
+

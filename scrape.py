@@ -69,10 +69,10 @@ def get_std(course):
 
         low_SD = norm.ppf(low_percentile)
         high_SD = norm.ppf(high_percentile)
-
+        
         print(f"To get a grade of {grade}, you must be between {low_SD} and {high_SD} SD.")
 
-#Gets the
+#Gets the grade distribution for the course
 def get_grade_dist():
     course_abbrev = input("Enter Course Abbreviation (e.g. COMPSCI 70):")
     for course in all_courses:
